@@ -1,0 +1,50 @@
+{
+  "name": "angular-webpack",
+  "version": "0.0.1",
+  "description": "angular-webpack starter kit",
+  "main": "index.js",
+  "scripts": {
+    "typings": "typings",
+    "webpack": "webpack",
+    "test": "test",
+    "server": "npm run server:dev",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base src/",
+    "server:dev:hmr": "npm run server:dev --hot",
+    "start": "npm run server:dev",
+    "start:hmr": "npm run server:dev:hmr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macruss/angular-webpack.git"
+  },
+  "keywords": [
+    "angular",
+    "webpack"
+  ],
+  "author": "Ruslan Makarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macruss/angular-webpack/issues"
+  },
+  "homepage": "https://github.com/macruss/angular-webpack#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "eslint": "^2.13.1",
+    "html-webpack-plugin": "^2.22.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "ng-annotate-loader": "^0.1.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0"
+  }
+}

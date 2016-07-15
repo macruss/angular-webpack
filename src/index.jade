@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+html(ng-app="app" lang="en")
+  head
+    meta(charset="UTF-8")
+    title= webpackConfig.metadata.title
+    base(href=webpackConfig.metadata.baseUrl)
+  body( ng-controller="AppCtrl as app")
+    h1(ng-bind="app.title") Loading...
+    if webpackConfig.metadata.ENV === 'development'
+      script(src="/webpack-dev-server.js")
